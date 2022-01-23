@@ -1,6 +1,6 @@
-import 'package:animated_stream_list/src/diff_applier.dart';
-import 'package:animated_stream_list/src/list_controller.dart';
-import 'package:animated_stream_list/src/myers_diff.dart';
+import 'package:animated_stream_list_nullsafety/src/diff_applier.dart';
+import 'package:animated_stream_list_nullsafety/src/list_controller.dart';
+import 'package:animated_stream_list_nullsafety/src/myers_diff.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';

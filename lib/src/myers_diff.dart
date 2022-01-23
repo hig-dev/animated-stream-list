@@ -1,5 +1,5 @@
-import 'package:animated_stream_list/src/diff_payload.dart';
-import 'package:animated_stream_list/src/path_node.dart';
+import 'package:animated_stream_list_nullsafety/src/diff_payload.dart';
+import 'package:animated_stream_list_nullsafety/src/path_node.dart';
 import 'package:flutter/foundation.dart';
 
 typedef bool Equalizer(dynamic item1, dynamic item2);

@@ -25,3 +25,10 @@
 
 ## 2.0.0
 * Migrated to null safety
+
+## 2.0.1
+* Update example app to new android plugin architecture
+* Release on pub.dev under new name
+
+## 2.0.2
+* Update metadata

@@ -1,7 +1,6 @@
 import 'dart:math';
 
-import 'package:animated_stream_list/animated_stream_list.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:animated_stream_list_nullsafety/animated_stream_list.dart';
 import 'package:flutter/material.dart';
 
 import 'todo.dart';

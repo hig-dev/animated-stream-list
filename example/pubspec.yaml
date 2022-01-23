@@ -21,7 +21,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animated_stream_list:
+  animated_stream_list_nullsafety:
     path: ../../animated-stream-list
   cupertino_icons: ^1.0.2
 
