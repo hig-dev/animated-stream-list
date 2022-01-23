@@ -1,6 +1,6 @@
 # Animated Stream List    
 
-[![pub package](https://img.shields.io/pub/v/animated_stream_list.svg)](https://pub.dev/packages/animated_stream_list_nullsafety)
+[![pub package](https://img.shields.io/pub/v/animated_stream_list_nullsafety.svg)](https://pub.dev/packages/animated_stream_list_nullsafety)
 
  A Flutter library to easily display a list with animated changes from a ```Stream<List<E>>```.    
 It's like ```StreamBuilder + ListView.Builder``` with animations.    
