@@ -33,5 +33,5 @@
 ## 2.0.2
 * Update metadata
 
-## 2.0.2
+## 2.0.3
 * Bugfix (https://github.com/hig-dev/animated-stream-list/pull/1#event-6945460029)
