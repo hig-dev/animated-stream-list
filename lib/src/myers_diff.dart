@@ -10,7 +10,7 @@ class DiffUtil<E> {
   Future<List<Diff>> calculateDiff(List<E>? oldList, List<E>? newList,
       {Equalizer? equalizer}) {
     eq = equalizer;
-    final args = _DiffArguments<E>(oldList, newList);
+    final args = _DiffArguments<E>(oldList, newList, eq);
     return compute(_myersDiff, args);
   }
 }
@@ -18,8 +18,9 @@ class DiffUtil<E> {
 class _DiffArguments<E> {
   final List<E>? oldList;
   final List<E>? newList;
+  final Equalizer? equalizer;
 
-  _DiffArguments(this.oldList, this.newList);
+  _DiffArguments(this.oldList, this.newList, this.equalizer);
 }
 
 List<Diff> _myersDiff<E>(_DiffArguments<E> args) {
@@ -42,7 +43,7 @@ List<Diff> _myersDiff<E>(_DiffArguments<E> args) {
     return [DeleteDiff(0, oldSize)];
   }
 
-  final equals = DiffUtil.eq != null ? DiffUtil.eq : (a, b) => a == b;
+  final equals = args.equalizer != null ? args.equalizer : (a, b) => a == b;
   final path = _buildPath(oldList, newList, equals);
   final diffs = _buildPatch(path, oldList, newList)..sort();
   return diffs.reversed.toList(growable: true);
